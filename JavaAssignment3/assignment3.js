@@ -1,23 +1,22 @@
-// Text Content
 
-const userNumber = document.getElementById('#number')
-const buttonSubmit = document.getElementById('#submit')
-let divResult = document.getElementById('.result')
 
-buttonSubmit.getElementById.value('click', () => {
-    let number = userNumber.ariaValueMax
-    if(number === ' ') {
-        alert('Please provide valid number')
-        return
+function generateTable () {
+  num1 = document.getElementById("number1").value
+  let p1 = document.getElementById("resultPara")
+  console.log (num1)
+    2
+    2*1
+    2*2
+    2*3
+    2*4
+
+    3*1
+    3*2
+    3*3
+    3*4
+    let result = ""
+    for (i=1; i <=10; i++) {
+      result = result +  (`${i} * ${num1} = ${i*num1} <br>`)
     }
-
-    number = parseInt(number)
-    divResult.innerHTML = ""
-    for(let i=1;i<10;i++){
-        let para = document.createElement('p')
-        let result = document.createTextNode(`${number} * ${i} = ${number * i}`)
-        para.append(result)
-        divResult.append(para)
+    p1.innerHTML = result
 }
-
-})
