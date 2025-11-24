@@ -29,3 +29,4 @@ function isEven(number){
         return false;
     }
 }
+console.log(isEven(number))
