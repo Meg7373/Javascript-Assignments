@@ -1,9 +1,11 @@
 // Javascript Assignment 2
 
-function functionAverage (score1, score2) {
-score1 = 80
-score2 = 90
-
-let result = Math.average (average)
-console.log (result)
+function calculateAverage (num1, num2) {
+    return (num1 + num2) / 2;
 }
+
+const avg1 = calculateAverage (90, 85)
+console.log(avg1);
+
+const avg2 = calculateAverage (100, 80)
+console.log(avg2);

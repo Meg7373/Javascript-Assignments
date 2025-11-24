@@ -6,7 +6,7 @@ let students = ["name", "age", "isEnrolled"];
     student[2] = true
     
 
-    console.log (student [Name])
-    console.log (student [age])
-    console.log (student [isEnrolled])
+    console.log (student (Name))
+    console.log (student (age))
+    console.log (student (isEnrolled))
 
