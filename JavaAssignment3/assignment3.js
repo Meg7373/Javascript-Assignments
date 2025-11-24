@@ -1,4 +1,4 @@
-
+//Generate Mulltiplication Table
 
 function generateTable () {
   num1 = document.getElementById("number1").value
@@ -19,4 +19,13 @@ function generateTable () {
       result = result +  (`${i} * ${num1} = ${i*num1} <br>`)
     }
     p1.innerHTML = result
+}
+
+function isEven(number){
+    if(number % 2 === 0){
+    return true;
+    }
+    else{
+        return false;
+    }
 }
