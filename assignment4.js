@@ -33,3 +33,32 @@ const apiResponse = {
     }
   ]
 };
+
+console.log(apiResponse)
+console.log(apiResponse.data)
+console.log(apiResponse.data[0])
+console.log(apiResponse.data[0].title)
+console.log(apiResponse.data[0].body)
+console.log(apiResponse.data[0].author)
+console.log(apiResponse.data[0].author.name)
+
+let myArray = ["a", "b", "c"]
+
+for (let i=0; i<myArray.length; i++){
+    console.log(myArray[i])
+}
+
+let apiData = apiResponse.data
+for (let i=0; i<apiData.length; i++){
+    console.log (apiData[i])
+    console.log (apiData[i].title)
+
+    let newHeading = document.createElement ("h2")
+    newHeading.innerText = apiData[i].title
+
+    let newParagraph = document.createElement ("p")
+    newParagraph.innerText = apiData[i].body
+
+    document.getElementById("articles").append(newHeading)
+    document.getElementById("articles").append(newParagraph)
+}
